@@ -1,0 +1,15 @@
+{
+  "name": "pickpocket",
+  "version": "0.0.1",
+  "description": "put every page to pocket",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+     "*://*/*",
+    "tabs"
+  ]
+}
